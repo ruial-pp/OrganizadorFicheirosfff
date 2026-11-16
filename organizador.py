@@ -23,6 +23,7 @@ for ficheiro in pasta.iterdir():
         print("Nome:", ficheiro.name)
         print("Extensão:", ficheiro.suffix or "Sem extensão")
         print("Tipo:", tipo)
+        print("Tamanho:", ficheiro.stat().st_size, "bytes")
         print("-----------------------")
 
 if total == 0:
